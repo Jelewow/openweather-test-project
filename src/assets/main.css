@@ -1,0 +1,89 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(31deg, rgba(2,0,36,1) 0%, rgba(156,12,255,1) 47%, rgba(166,0,255,1) 50%, rgba(255,231,0,1) 100%, rgba(116,64,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 900px;
+    height: 500px;
+    border-radius: 50px;
+    background: rgba(59, 59, 59, 0.438);
+    text-align: center;
+    color: black;
+}
+
+.wrapper h1 {
+    color: black;
+    margin-top: 50px;
+}
+
+.wrapper p {
+    margin-top: 20px;
+}
+
+.wrapper input {
+    margin-top: 30px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(238, 225, 50, 0.842);
+    color: black;
+    font-size: 14px;
+    padding: 5px 8px;
+    outline: none;
+    font-weight: bold;
+}
+
+.wrapper input:focus {
+    border-bottom-color: white;
+}
+
+.wrapper button {
+    margin-left: 25px;
+    padding: 10px 15px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: scale 500ms ease;
+}
+
+.wrapper button:hover {
+    margin-left: 25px;
+    padding: 10px 15px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    scale: 1.2;
+}
+
+.wrapper button:disabled {
+    margin-left: 25px;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    scale: 1.2;
+    cursor:default;
+}
+
+.error {
+    color: red;
+}
